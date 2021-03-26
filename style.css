@@ -1,0 +1,99 @@
+:root {
+    --cta-text: hsl(356, 100%, 66%);
+    --header-background-primary: hsl(13, 100%, 72%);
+    --header-background-secondary: hsl(353, 100%, 62%);
+    --background-hover-cta: hsl(355, 100%, 74%);
+}
+
+body {
+    margin: 0;
+}
+
+/* reset values USER-AGENT */
+.btn {
+    outline: none;
+    cursor: pointer;
+}
+
+.header-site {
+    background-image: url(images/bg-pattern-intro.svg), linear-gradient(to bottom, var(--header-background-primary), var(--header-background-secondary));
+    background-repeat: no-repeat;
+    background-size: 200% 200%, cover;
+    background-position: -160px -65px, top;
+    padding: 18px 18px 45px 18px;
+    --color-text: #fff;
+    color: var(--color-text);
+    font-family: "Overpass";
+    border-bottom-left-radius: 25%;
+}
+
+.header-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.btn-menu {
+    background-color: transparent;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-menu:hover {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.header-cta {
+    margin-top: 82px;
+    text-align: center;
+}
+
+.get-started {
+    display: flex;
+    justify-content: center;
+    gap: 0 22px;
+}
+
+.get-started > .btn {
+    font-family: "Ubuntu";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-start {
+    background-color: #fff;
+    border: none;
+    padding: 8px 8px;
+    border-radius: 22px;
+    color: var(--cta-text);
+    transition: background ease 0.2s;
+}
+
+.btn-start:hover {
+    color: #fff;
+    background-color: var(--background-hover-cta);
+}
+
+.btn-learn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 8px 14px;
+    border-radius: 22px;
+    color: var(--color-text);
+    transition: background ease 0.2s;
+}
+
+.btn-learn:hover {
+    color: var(--cta-text);
+    background-color: #fff;
+}
