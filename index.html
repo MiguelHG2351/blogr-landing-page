@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Frontend Mentor | [Blogr]</title>
         <!-- displays site properly based on user's device -->
 
         <link
@@ -21,8 +22,6 @@
             href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
             rel="stylesheet"
         />
-
-        <title>Frontend Mentor | [Blogr]</title>
     </head>
     <body>
         <header class="header-site">
@@ -30,7 +29,7 @@
                 <div class="header-title">
                     <h3>Blogr</h3>
                 </div>
-                <div class="header-menu">
+                <div class="header-menu-mobile">
                     <button class="btn btn-menu">
                         <i>
                             <svg
@@ -46,6 +45,83 @@
                             </svg>
                         </i>
                     </button>
+                </div>
+                <div class="header-menu">
+                    <details class="drop-down-option">
+                        <summary class="title-drop-down">
+                            <span>Product</span>
+                            <i
+                                ><img
+                                    src="images/icon-arrow-dark.svg"
+                                    alt="La opción del menu esta cerrada"
+                            /></i>
+                        </summary>
+                        <ul class="list-product">
+                            <li class="list-item">
+                                <a href="#"> Overview </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#"> Pricing </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#"> Marketplace </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#"> Features </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#"> Integrations </a>
+                            </li>
+                        </ul>
+                    </details>
+                    <details class="drop-down-option">
+                        <summary class="title-drop-down">
+                            <span>Company</span>
+                            <i
+                                ><img
+                                    src="images/icon-arrow-dark.svg"
+                                    alt="La opción del menu esta cerrada"
+                            /></i>
+                        </summary>
+                        <ul class="list-product">
+                            <li class="list-item">
+                                <a href="#"> About </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#"> Team </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#"> Blog </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#"> Careers </a>
+                            </li>
+                        </ul>
+                    </details>
+                    <details class="drop-down-option">
+                        <summary class="title-drop-down">
+                            <span>Conect</span>
+                            <i>
+                                <img src="images/icon-arrow-dark.svg" />
+                            </i>
+                        </summary>
+                        <ul class="list-product">
+                            <li class="list-item">
+                                <a href="#"> Contact </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#"> Newsletter </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#"> Linkedin </a>
+                            </li>
+                        </ul>
+                    </details>
+                    <hr>
+                    <div class="user-action">
+                        <button class="btn login">Login</button>
+                        <button class="btn sign-up">Sign up</button>
+                    </div>
                 </div>
             </div>
             <div class="header-cta">
@@ -81,8 +157,16 @@
                     customized categories, section, format, or flow. With this
                     functionality you're in full control
                 </p>
-                <img src="images/illustration-phones.svg" class="responsive-img" alt="ilustración">
+                <img
+                    src="images/illustration-phones.svg"
+                    class="responsive-img"
+                    alt="ilustración"
+                />
             </div>
         </section>
+        <details class="carrousel-content">
+            <summary>XDD</summary>
+            <p>XDDD</p>
+        </details>
     </body>
 </html>
