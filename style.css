@@ -3,6 +3,7 @@
     --header-background-primary: hsl(13, 100%, 72%);
     --header-background-secondary: hsl(353, 100%, 62%);
     --background-hover-cta: hsl(355, 100%, 74%);
+    --color-text-gray: hsl(207, 13%, 34%);
 }
 
 body {
@@ -44,6 +45,11 @@ h3 {
 
 /* Header-menu */
 .header-menu {
+    display: none;
+}
+
+.header-menu.active {
+    transition: opacity 0.15s ease;
     box-sizing: border-box;
     position: absolute;
     background-color: #fff;
@@ -55,9 +61,21 @@ h3 {
     padding: 12px;
     text-align: center;
     box-shadow: 0 0 13px 0.5px rgba(0, 0, 0, 0.18);
+    display: block;
+    animation-name: opacityAnimation;
+    animation-duration: 0.255s;
+    animation-timing-function: ease-in;
 }
 
-
+@keyframes opacityAnimation {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
 
 .drop-down-option[open] .title-drop-down i img {
     transform: rotateZ(180deg);
@@ -67,6 +85,7 @@ h3 {
     padding: 6px;
     width: 100%;
     list-style: none;
+    cursor: pointer;
 }
 
 .title-drop-down:focus {
@@ -95,7 +114,7 @@ h3 {
 
 .list-item a {
     display: block;
-    color: #5a6a7a;
+    color: var(--color-text-gray);
     text-decoration: none;
     padding: 8px;
     font-size: 14px;
@@ -186,7 +205,80 @@ hr {
 }
 
 .responsive-img {
-    max-width: 100;
+    max-width: 100%;
     width: 100%;
     height: 100%;
 }
+
+main {
+    text-align: center;
+}
+
+main section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hero-description p, .advantage-description p {
+    color:  var(--color-text-gray);
+}
+
+.state-of-the-art {
+    border-bottom-left-radius: 126px;
+    border-top-right-radius: 80px;
+    background-color: #34344c;
+    background-image: url(images/bg-pattern-circles.svg);
+    margin-top: 250px;
+    padding: 120px 0;
+    background-size: cover;
+    background-position: -100px -200px;
+    background-repeat: no-repeat;
+}
+
+.state-of-the-art img {
+    margin-top: -300px;
+}
+
+.state-of-the-art img {
+    margin-top: -300px;
+}
+
+.state-of-the-art-content h3 {
+    font-size: 42px;
+    color: #eee;
+}
+
+.state-of-the-art-content p {
+    width: 88%;
+    margin: 22px auto;
+    color: #bebec6;
+}
+
+footer {
+    background-color: #24242c;
+    border-top-right-radius: 65px;
+    padding: 22px;
+}
+
+.footer-title h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+}
+
+.footer-nav h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;   
+}
+
+.footer-nav-list {
+    padding-left: 0;
+}
+
+.footer-nav-list-item {
+    list-style: none;
+    text-align: center;
+    color: #c5c6ca;
+}
+

@@ -30,7 +30,7 @@
                     <h3>Blogr</h3>
                 </div>
                 <div class="header-menu-mobile">
-                    <button class="btn btn-menu">
+                    <button class="btn btn-menu" id="btn-menu">
                         <i>
                             <svg
                                 width="32"
@@ -46,7 +46,7 @@
                         </i>
                     </button>
                 </div>
-                <div class="header-menu">
+                <div class="header-menu" id="header-menu">
                     <details class="drop-down-option">
                         <summary class="title-drop-down">
                             <span>Product</span>
@@ -117,7 +117,7 @@
                             </li>
                         </ul>
                     </details>
-                    <hr>
+                    <hr />
                     <div class="user-action">
                         <button class="btn login">Login</button>
                         <button class="btn sign-up">Sign up</button>
@@ -133,40 +133,126 @@
                 <button class="btn btn-learn">Learn more</button>
             </div>
         </header>
-        <section>
-            <div class="hero">
-                <h2>Designed for the future</h2>
-                <img
-                    class="responsive-img"
-                    src="/images/illustration-editor-mobile.svg"
-                    alt=""
-                />
-                <h2>Introducing an extensible editor</h2>
-                <p>
-                    Blogr features an exceedingly intuitive inteface wich lets
-                    you focus on one thing: creating. The editor supports
-                    managment of multiple blogs and follows easy manipulation of
-                    embeds such as images, videos, and Markdown. Extensibility
-                    width plugins and themes provide easy ways to add
-                    functionality or change the looks of a blog.
-                </p>
-                <h2>Robust content managment</h2>
-                <p>
-                    Flexible content managment enables users to easily move
-                    through post. Increase the usability of your blog by adding
-                    customized categories, section, format, or flow. With this
-                    functionality you're in full control
-                </p>
+        <main>
+            <section class="hero">
+                <div class="hero-title">
+                    <h2>Designed for the future</h2>
+                </div>
+                <div class="hero-image">
+                    <img
+                        class="responsive-img"
+                        src="images/illustration-editor-mobile.svg"
+                        alt=""
+                    />
+                </div>
+                <div class="hero-description">
+                    <h2>Introducing an extensible editor</h2>
+                    <p>
+                        Blogr features an exceedingly intuitive inteface wich
+                        lets you focus on one thing: creating. The editor
+                        supports managment of multiple blogs and follows easy
+                        manipulation of embeds such as images, videos, and
+                        Markdown. Extensibility width plugins and themes provide
+                        easy ways to add functionality or change the looks of a
+                        blog.
+                    </p>
+                    <h2>Robust content managment</h2>
+                    <p>
+                        Flexible content managment enables users to easily move
+                        through post. Increase the usability of your blog by
+                        adding customized categories, section, format, or flow.
+                        With this functionality you're in full control
+                    </p>
+                </div>
+            </section>
+            <div class="state-of-the-art">
                 <img
                     src="images/illustration-phones.svg"
                     class="responsive-img"
                     alt="ilustración"
                 />
+                <div class="state-of-the-art-content">
+                    <h3>State of the Art Infrastructure</h3>
+                    <p>
+                        With reliability and speed in mind worldwide data
+                        centers provide the backbone for ultra-fast
+                        connectivity. This ensures your site will load
+                        instantly, no matter where your readers are, keeping
+                        your site competitive
+                    </p>
+                </div>
             </div>
-        </section>
-        <details class="carrousel-content">
-            <summary>XDD</summary>
-            <p>XDDD</p>
-        </details>
+            <section class="advantage">
+                <img
+                    src="images/illustration-laptop-desktop.svg"
+                    loading="lazy"
+                    srcset="
+                        images/illustration-laptop-mobile.svg  1200w,
+                        images/illustration-laptop-desktop.svg 1250w
+                    "
+                    sizes="(max-width) 1200pxm, (min-width) 1250px"
+                    class="responsive-img"
+                    alt="Laptop mostrando el producto"
+                />
+                <div class="advantage-description">
+                    <h3>Free, open, simple</h3>
+                    <p>
+                        Blogr is a free and open source application backed by a
+                        large community of helpful developers. It supports features
+                        such as code syntax highlighting. RSS feeds, social media
+                        integration, third-party commenting tools, and work
+                        seamlessly with Google Analytics. The architecture is clean
+                        and is relatively easy to learn.
+                    </p>
+    
+                    <h3>Powerful tooling</h3>
+                    <p>
+                        Batteries includes. We build a simple and straightforward
+                        CLI tool that makes customization and deployment a breeze,
+                        but capable of producing even the most complicated sites.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-title">
+                <h2>Blogr</h2>
+            </div>
+            <nav class="footer-nav">
+                <h3>Product</h3>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-list-item">Overview</li>
+                    <li class="footer-nav-list-item">Pricing</li>
+                    <li class="footer-nav-list-item">Marketplace</li>
+                    <li class="footer-nav-list-item">Features</li>
+                    <li class="footer-nav-list-item">Integrations</li>
+                </ul>
+            </nav>
+            <nav class="footer-nav">
+                <h3>Company</h3>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-list-item">About</li>
+                    <li class="footer-nav-list-item">Team</li>
+                    <li class="footer-nav-list-item">Blog</li>
+                    <li class="footer-nav-list-item">Careers</li>
+                </ul>
+            </nav>
+            <nav class="footer-nav">
+                <h3>Connect</h3>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-list-item">Contact</li>
+                    <li class="footer-nav-list-item">Newsletter</li>
+                    <li class="footer-nav-list-item">Linkedin</li>
+                </ul>
+            </nav>
+        </footer>
+        <script>
+            const $dropdown = document.getElementById("header-menu");
+            const $btnMenu = document.getElementById("btn-menu");
+
+            $btnMenu.addEventListener("click", () => {
+                $dropdown.classList.toggle("active");
+            });
+        </script>
     </body>
 </html>
