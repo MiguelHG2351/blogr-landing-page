@@ -8,7 +8,9 @@
 
 body {
     margin: 0;
-    font-family: "Overpass", Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    font-family: "Overpass", Arial, Helvetica, sans-serif, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue";
 }
 
 /* reset values USER-AGENT */
@@ -18,7 +20,12 @@ body {
 }
 
 .header-site {
-    background-image: url(images/bg-pattern-intro.svg), linear-gradient(to bottom, var(--header-background-primary), var(--header-background-secondary));
+    background-image: url(images/bg-pattern-intro.svg),
+        linear-gradient(
+            to bottom,
+            var(--header-background-primary),
+            var(--header-background-secondary)
+        );
     background-repeat: no-repeat;
     background-size: 200% 200%, cover;
     background-position: -160px -65px, top;
@@ -71,14 +78,10 @@ h3 {
     from {
         opacity: 0;
     }
-    
+
     to {
         opacity: 1;
     }
-}
-
-.drop-down-option[open] .title-drop-down i img {
-    transform: rotateZ(180deg);
 }
 
 .title-drop-down {
@@ -95,11 +98,16 @@ h3 {
 }
 
 .title-drop-down i {
-    vertical-align: text-bottom;
+    vertical-align: middle;
 }
 
 .title-drop-down i img {
+    width: 12px;
     transition: transform 0.2s ease;
+}
+
+.drop-down-option[open] .title-drop-down i img {
+    transform: rotateZ(180deg);
 }
 
 .list-product {
@@ -120,12 +128,17 @@ h3 {
     font-size: 14px;
 }
 
-hr {
-    color: #e5e5e5;
+/* horizonal bar */
+.bar {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* btn drop-down */
-.btn.login, .btn.sign-up {
+
+.btn.login,
+.btn.sign-up {
     margin: auto;
     display: block;
     padding: 8px;
@@ -139,7 +152,11 @@ hr {
 }
 
 .btn.sign-up {
-    background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-image: linear-gradient(
+        to right,
+        hsl(13, 100%, 72%),
+        hsl(353, 100%, 62%)
+    );
     color: #fff;
     font-weight: 600;
     border-radius: 23px;
@@ -164,6 +181,10 @@ hr {
     text-align: center;
 }
 
+.header-cta p {
+    color: #ffefe1;
+}
+
 .get-started {
     display: flex;
     justify-content: center;
@@ -174,12 +195,12 @@ hr {
     font-family: "Ubuntu";
     font-size: 16px;
     font-weight: 500;
+    padding: 8px 14px;
 }
 
 .btn-start {
     background-color: #fff;
     border: none;
-    padding: 8px 8px;
     border-radius: 22px;
     color: var(--cta-text);
     transition: background ease 0.2s;
@@ -193,7 +214,6 @@ hr {
 .btn-learn {
     background-color: transparent;
     border: 1px solid #fff;
-    padding: 8px 14px;
     border-radius: 22px;
     color: var(--color-text);
     transition: background ease 0.2s;
@@ -207,11 +227,7 @@ hr {
 .responsive-img {
     max-width: 100%;
     width: 100%;
-    height: 100%;
-}
-
-main {
-    text-align: center;
+    height: auto;
 }
 
 main section {
@@ -219,8 +235,18 @@ main section {
     margin: 0 auto;
 }
 
-.hero-description p, .advantage-description p {
-    color:  var(--color-text-gray);
+main {
+    text-align: center;
+}
+
+.hero-description p,
+.advantage-description p {
+    color: var(--color-text-gray);
+}
+
+.hero-description h2,
+.advantage-description h2 {
+    color: #1e3a52;
 }
 
 .state-of-the-art {
@@ -269,7 +295,7 @@ footer {
 .footer-nav h3 {
     text-align: center;
     font-size: 18px;
-    color: #fff;   
+    color: #fff;
 }
 
 .footer-nav-list {
@@ -282,3 +308,195 @@ footer {
     color: #c5c6ca;
 }
 
+@media screen and (min-width: 1250px) {
+    .header-site {
+        padding: 20px 10vw;
+        border-bottom-left-radius: 12%;
+    }
+
+    h1 {
+        font-size: 46px;
+    }
+
+    .header-intro {
+        justify-content: flex-start;
+        gap: 0 20px;
+        margin-top: 45px;
+    }
+
+    .header-title h3 {
+        font-size: 42px;
+    }
+
+    .header-menu-mobile {
+        display: none;
+    }
+
+    .header-menu {
+        display: flex;
+        flex-basis: 75%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .drop-down-option {
+        display: inline-block;
+    }
+
+    /* horizontal bar */
+    .bar {
+        display: none;
+    }
+
+    .btn.login,
+    .btn.sign-up {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .btn.login {
+        color: #ffd2ce;
+        font-weight: 600;
+    }
+
+    .btn.sign-up {
+        background-image: none;
+        background-color: #fff;
+        color: var(--cta-text);
+    }
+
+    .list-product {
+        position: absolute;
+        border-radius: 12px;
+        background-color: #fff;
+    }
+
+    .list-item:hover {
+        font-weight: 600;
+    }
+
+    .cta {
+        margin-bottom: 80px;
+    }
+
+    .header-cta h1 {
+        font-size: 52px;
+    }
+
+    .header-cta p {
+        font-size: 18px;
+    }
+
+    .get-started > .btn {
+        padding: 12px 16px;
+    }
+
+    main {
+        text-align: left;
+    }
+
+    .hero-description h2,
+    .advantage-description h2 {
+        color: #1e3a52;
+        margin: 2em 0;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .hero-title {
+        grid-column: 1 / 3;
+        text-align: center;
+    }
+
+    .hero-description {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-image {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+
+    .state-of-the-art {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        height: 450px;
+        padding: 12px;
+    }
+
+    .state-of-the-art-img {
+        height: 100%;
+        position: relative;
+    }
+    
+    .state-of-the-art-img img {
+        position: absolute;
+        margin-top: -160px;
+    }
+
+    .state-of-the-art-content {
+        height: max-content;
+    }
+
+    .state-of-the-art-content h3 {
+        font-size: 42px;
+        color: #eee;
+    }
+    
+    .state-of-the-art-content p {
+        width: 88%;
+        margin: 22px 0;
+        color: #bebec6;
+    }
+
+    .advantage {
+        margin: 300px 0 0;
+        max-width: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .advantage-description {
+        height: max-content;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 75%;
+    }
+
+    .footer-nav h3 {
+        text-align: left;
+    }
+
+    .navigation-footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        width: 70%;
+    }
+
+    .footer-nav {
+        display: inline-block;
+    }
+
+    .footer-nav-list-item + .footer-nav-list-item {
+        margin-top: 10px;
+    }
+
+    .footer-nav-list-item {
+        text-align: left;
+    }
+
+}

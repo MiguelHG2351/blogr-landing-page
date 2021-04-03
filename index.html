@@ -47,90 +47,115 @@
                     </button>
                 </div>
                 <div class="header-menu" id="header-menu">
-                    <details class="drop-down-option">
-                        <summary class="title-drop-down">
-                            <span>Product</span>
-                            <i
-                                ><img
-                                    src="images/icon-arrow-dark.svg"
-                                    alt="La opción del menu esta cerrada"
-                            /></i>
-                        </summary>
-                        <ul class="list-product">
-                            <li class="list-item">
-                                <a href="#"> Overview </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#"> Pricing </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#"> Marketplace </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#"> Features </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#"> Integrations </a>
-                            </li>
-                        </ul>
-                    </details>
-                    <details class="drop-down-option">
-                        <summary class="title-drop-down">
-                            <span>Company</span>
-                            <i
-                                ><img
-                                    src="images/icon-arrow-dark.svg"
-                                    alt="La opción del menu esta cerrada"
-                            /></i>
-                        </summary>
-                        <ul class="list-product">
-                            <li class="list-item">
-                                <a href="#"> About </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#"> Team </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#"> Blog </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#"> Careers </a>
-                            </li>
-                        </ul>
-                    </details>
-                    <details class="drop-down-option">
-                        <summary class="title-drop-down">
-                            <span>Conect</span>
-                            <i>
-                                <img src="images/icon-arrow-dark.svg" />
-                            </i>
-                        </summary>
-                        <ul class="list-product">
-                            <li class="list-item">
-                                <a href="#"> Contact </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#"> Newsletter </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#"> Linkedin </a>
-                            </li>
-                        </ul>
-                    </details>
-                    <hr />
+                    <div class="menu-drop-down">
+                        <details class="drop-down-option" data-dropdown>
+                            <summary class="title-drop-down">
+                                <span>Product</span>
+                                <i
+                                    ><img
+                                    src="images/icon-arrow-light.svg"
+                                        alt="dropdown no active"
+                                        srcset="
+                                            images/icon-arrow-dark.svg  1200w,
+                                            images/icon-arrow-light.svg 1250w
+                                        "
+                                        sizes="(max-width) 1200px, (min-width) 1250px"
+                                        loading="lazy"
+                                /></i>
+                            </summary>
+                            <ul class="list-product">
+                                <li class="list-item">
+                                    <a href="#"> Overview </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#"> Pricing </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#"> Marketplace </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#"> Features </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#"> Integrations </a>
+                                </li>
+                            </ul>
+                        </details>
+                        <details class="drop-down-option" data-dropdown>
+                            <summary class="title-drop-down">
+                                <span>Company</span>
+                                <i
+                                    ><img
+                                        src="images/icon-arrow-light.svg"
+                                        alt="dropdown no active"
+                                        srcset="
+                                            images/icon-arrow-dark.svg  1200w,
+                                            images/icon-arrow-light.svg 1250w
+                                        "
+                                        sizes="(max-width) 1200px, (min-width) 1250px"
+                                        loading="lazy"
+                                /></i>
+                            </summary>
+                            <ul class="list-product">
+                                <li class="list-item">
+                                    <a href="#"> About </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#"> Team </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#"> Blog </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#"> Careers </a>
+                                </li>
+                            </ul>
+                        </details>
+                        <details class="drop-down-option" data-dropdown>
+                            <summary class="title-drop-down">
+                                <span>Conect</span>
+                                <i>
+                                    <img
+                                        src="images/icon-arrow-light.svg"
+                                        alt="dropdown no active"
+                                        srcset="
+                                            images/icon-arrow-dark.svg  1200w,
+                                            images/icon-arrow-light.svg 1250w
+                                        "
+                                        sizes="(max-width) 1200px, (min-width) 1250px"
+                                        loading="lazy"
+                                    />
+                                </i>
+                            </summary>
+                            <ul class="list-product">
+                                <li class="list-item">
+                                    <a href="#"> Contact </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#"> Newsletter </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#"> Linkedin </a>
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+                    <div class="bar"></div>
                     <div class="user-action">
                         <button class="btn login">Login</button>
                         <button class="btn sign-up">Sign up</button>
                     </div>
                 </div>
             </div>
-            <div class="header-cta">
-                <h1>A modern publishing platform</h1>
-                <p>Grow your audience and build your online brand</p>
-            </div>
-            <div class="get-started">
-                <button class="btn btn-start">Start for free</button>
-                <button class="btn btn-learn">Learn more</button>
+            <div class="cta">
+                <div class="header-cta">
+                    <h1>A modern publishing platform</h1>
+                    <p>Grow your audience and build your online brand</p>
+                </div>
+                <div class="get-started">
+                    <button class="btn btn-start">Start for free</button>
+                    <button class="btn btn-learn">Learn more</button>
+                </div>
             </div>
         </header>
         <main>
@@ -142,35 +167,39 @@
                     <img
                         class="responsive-img"
                         src="images/illustration-editor-mobile.svg"
-                        alt=""
+                        alt="mobile preview software"
                     />
                 </div>
                 <div class="hero-description">
-                    <h2>Introducing an extensible editor</h2>
-                    <p>
-                        Blogr features an exceedingly intuitive inteface wich
-                        lets you focus on one thing: creating. The editor
-                        supports managment of multiple blogs and follows easy
-                        manipulation of embeds such as images, videos, and
-                        Markdown. Extensibility width plugins and themes provide
-                        easy ways to add functionality or change the looks of a
-                        blog.
-                    </p>
-                    <h2>Robust content managment</h2>
-                    <p>
-                        Flexible content managment enables users to easily move
-                        through post. Increase the usability of your blog by
-                        adding customized categories, section, format, or flow.
-                        With this functionality you're in full control
-                    </p>
+                    <div>
+                        <h2>Introducing an extensible editor</h2>
+                        <p>
+                            Blogr features an exceedingly intuitive inteface wich
+                            lets you focus on one thing: creating. The editor
+                            supports managment of multiple blogs and follows easy
+                            manipulation of embeds such as images, videos, and
+                            Markdown. Extensibility width plugins and themes provide
+                            easy ways to add functionality or change the looks of a
+                            blog.
+                        </p>
+                        <h2>Robust content managment</h2>
+                        <p>
+                            Flexible content managment enables users to easily move
+                            through post. Increase the usability of your blog by
+                            adding customized categories, section, format, or flow.
+                            With this functionality you're in full control
+                        </p>
+                    </div>
                 </div>
             </section>
             <div class="state-of-the-art">
-                <img
-                    src="images/illustration-phones.svg"
-                    class="responsive-img"
-                    alt="ilustración"
-                />
+                <div class="state-of-the-art-img">
+                    <img
+                        src="images/illustration-phones.svg"
+                        class="responsive-img"
+                        alt="ilustración"
+                    />
+                </div>
                 <div class="state-of-the-art-content">
                     <h3>State of the Art Infrastructure</h3>
                     <p>
@@ -183,34 +212,39 @@
                 </div>
             </div>
             <section class="advantage">
-                <img
-                    src="images/illustration-laptop-desktop.svg"
-                    loading="lazy"
-                    srcset="
-                        images/illustration-laptop-mobile.svg  1200w,
-                        images/illustration-laptop-desktop.svg 1250w
-                    "
-                    sizes="(max-width) 1200pxm, (min-width) 1250px"
-                    class="responsive-img"
-                    alt="Laptop mostrando el producto"
-                />
+                <div class="advantage-img">
+                    <img
+                        src="images/illustration-laptop-desktop.svg"
+                        loading="lazy"
+                        srcset="
+                            images/illustration-laptop-mobile.svg  1200w,
+                            images/illustration-laptop-desktop.svg 1250w
+                        "
+                        sizes="(max-width) 1200px, (min-width) 1250px"
+                        class="responsive-img"
+                        alt="Laptop mostrando el producto"
+                    />
+                </div>
                 <div class="advantage-description">
-                    <h3>Free, open, simple</h3>
-                    <p>
-                        Blogr is a free and open source application backed by a
-                        large community of helpful developers. It supports features
-                        such as code syntax highlighting. RSS feeds, social media
-                        integration, third-party commenting tools, and work
-                        seamlessly with Google Analytics. The architecture is clean
-                        and is relatively easy to learn.
-                    </p>
+                    <div>
+                        <h3>Free, open, simple</h3>
+                        <p>
+                            Blogr is a free and open source application backed by a
+                            large community of helpful developers. It supports
+                            features such as code syntax highlighting. RSS feeds,
+                            social media integration, third-party commenting tools,
+                            and work seamlessly with Google Analytics. The
+                            architecture is clean and is relatively easy to learn.
+                        </p>
     
-                    <h3>Powerful tooling</h3>
-                    <p>
-                        Batteries includes. We build a simple and straightforward
-                        CLI tool that makes customization and deployment a breeze,
-                        but capable of producing even the most complicated sites.
-                    </p>
+                        <h3>Powerful tooling</h3>
+                        <p>
+                            Batteries includes. We build a simple and
+                            straightforward CLI tool that makes customization and
+                            deployment a breeze, but capable of producing even the
+                            most complicated sites.
+                        </p>
+                    </div>
                 </div>
             </section>
         </main>
@@ -218,41 +252,36 @@
             <div class="footer-title">
                 <h2>Blogr</h2>
             </div>
-            <nav class="footer-nav">
-                <h3>Product</h3>
-                <ul class="footer-nav-list">
-                    <li class="footer-nav-list-item">Overview</li>
-                    <li class="footer-nav-list-item">Pricing</li>
-                    <li class="footer-nav-list-item">Marketplace</li>
-                    <li class="footer-nav-list-item">Features</li>
-                    <li class="footer-nav-list-item">Integrations</li>
-                </ul>
-            </nav>
-            <nav class="footer-nav">
-                <h3>Company</h3>
-                <ul class="footer-nav-list">
-                    <li class="footer-nav-list-item">About</li>
-                    <li class="footer-nav-list-item">Team</li>
-                    <li class="footer-nav-list-item">Blog</li>
-                    <li class="footer-nav-list-item">Careers</li>
-                </ul>
-            </nav>
-            <nav class="footer-nav">
-                <h3>Connect</h3>
-                <ul class="footer-nav-list">
-                    <li class="footer-nav-list-item">Contact</li>
-                    <li class="footer-nav-list-item">Newsletter</li>
-                    <li class="footer-nav-list-item">Linkedin</li>
-                </ul>
-            </nav>
+            <div class="navigation-footer">
+                <nav class="footer-nav">
+                    <h3>Product</h3>
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-list-item">Overview</li>
+                        <li class="footer-nav-list-item">Pricing</li>
+                        <li class="footer-nav-list-item">Marketplace</li>
+                        <li class="footer-nav-list-item">Features</li>
+                        <li class="footer-nav-list-item">Integrations</li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav">
+                    <h3>Company</h3>
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-list-item">About</li>
+                        <li class="footer-nav-list-item">Team</li>
+                        <li class="footer-nav-list-item">Blog</li>
+                        <li class="footer-nav-list-item">Careers</li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav">
+                    <h3>Connect</h3>
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-list-item">Contact</li>
+                        <li class="footer-nav-list-item">Newsletter</li>
+                        <li class="footer-nav-list-item">Linkedin</li>
+                    </ul>
+                </nav>
+            </div>
         </footer>
-        <script>
-            const $dropdown = document.getElementById("header-menu");
-            const $btnMenu = document.getElementById("btn-menu");
-
-            $btnMenu.addEventListener("click", () => {
-                $dropdown.classList.toggle("active");
-            });
-        </script>
+        <script src="index.js"></script>
     </body>
 </html>
